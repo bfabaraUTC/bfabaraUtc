@@ -1,0 +1,32 @@
+@(ordenes: java.util.List[Orden])
+<html>
+	<head>
+	
+	
+	
+	</head>
+	<body>
+	<table border=1>
+	<tr>
+		<td>Descripcion</td>
+		<td>Total</td>
+		<td>MesA</td>
+		
+	</tr>
+	@for(orden <- ordenes){
+	<tr>
+		<td>@orden.descripcion</td>
+		<td>@orden.total</td>
+		
+		<td>@orden.mesa</td>
+		
+	</tr>
+	}
+	
+	
+	
+	</table>
+	
+	</body>
+
+</html>
